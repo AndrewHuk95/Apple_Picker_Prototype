@@ -10,10 +10,13 @@ public class AppleTree : MonoBehaviour
     public float leftAndRightEdge = 10f;
     public float chanceToChangeDirections = 0.1f;
     public float secondBetweenAplleDrops = 1f;
+    // Start is called before the first frame update
     void Start()
     {
         Invoke("DropApple", 2f);
     }
+
+    // Update is called once per frame
     void Update()
     {
         Vector3 pos = transform.position;
